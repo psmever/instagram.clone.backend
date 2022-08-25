@@ -1,2 +1,16 @@
-build/**
+# /node_modules/* in the project root is ignored by default
+/node_modules/*
+
+# build artefacts
+dist/*
+build/*
+coverage/*
+
+# data definition files
+**/*.d.ts
+
+# 3rd party libs
+public/
+
+# webpack.config file
 webpack.config.js

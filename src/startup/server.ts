@@ -29,8 +29,7 @@ function addRouters(app: Application): void {
 
 // 서버 설정.
 export function initServer(app: Application): void {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  app.engine('pug', require('pug').__express);
+  // app.engine('pug', require('pug').__express);
 
   app.set('views', path.join(__dirname, 'resources/views'));
   app.set('view engine', 'pug');

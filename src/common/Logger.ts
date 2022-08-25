@@ -43,8 +43,10 @@ const consoleLogger = winston.createLogger({
     winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
     winston.format.align(),
     winston.format.printf((info) => {
+      /* eslint-disable */
       const { timestamp, level, message, ...extra } = info;
 
+      /* eslint-disable */
       return `${timestamp} [${level}]: ${message} ${
         Object.keys(extra).length ? JSON.stringify(extra, null, 2) : ''
       }`;
