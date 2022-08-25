@@ -42,6 +42,15 @@ npm run start or yarn start
 
 ```
 
+> 서버 개발 환경.
+
+```
+개발 서버 확인
+
+http://localhost:8080
+
+```
+
 > 빌드 테스트
 
 ```
