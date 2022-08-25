@@ -12,6 +12,7 @@
             "@config": ["src/config"],
             "@common": ["src/common"],
             "@controller/*": ["src/controller/*"],
+            "@model/*": ["src/model/*"],
         },
         "typeRoots": ["./node_modules/@types", "src/types"],
         "types": ["node"],

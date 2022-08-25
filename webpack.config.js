@@ -28,6 +28,7 @@ module.exports = {
             '@config': path.resolve(__dirname, '/src/config'),
             '@common': path.resolve(__dirname, '/src/common'),
             '@controller': path.resolve(__dirname, 'src/controller'),
+            '@model': path.resolve(__dirname, 'src/model'),
         }
     },
     module: {
