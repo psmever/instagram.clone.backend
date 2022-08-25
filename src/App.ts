@@ -1,14 +1,14 @@
+import { Logger } from '@helper';
 import express, { Application } from 'express';
 import * as startup from './startup';
-import { Logger } from '@helper';
 
 const checkResult = startup.checkEnvironment();
 
 if (checkResult.state === true) {
-    const app: Application = express();
+  const app: Application = express();
 
-    startup.initServer(app);
-    startup.startServer(app);
+  startup.initServer(app);
+  startup.startServer(app);
 } else {
-    Logger.info(`\nExpress start Error :: ${checkResult.message}\n`, null, true);
+  Logger.info(`\nExpress start Error :: ${checkResult.message}\n`, null, true);
 }
