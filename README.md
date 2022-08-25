@@ -8,7 +8,20 @@
 ## Back-End Source.
 
 
-
+> .env
+```
+NODE_ENV=
+APP_NAME=
+APP_ENV=
+PORT=
+HOSTNAME=
+MYSQL_USERNAME=
+MYSQL_PASSWORD=
+MYSQL_DATABASE=
+MYSQL_HOST=
+MYSQL_DIALECT=
+MYSQL_PORT=
+```
 
 
 ## Contributing
