@@ -26,7 +26,7 @@ module.exports = {
             '@src': path.resolve(__dirname, '/src'),
             '@src/*': path.resolve(__dirname, '/src/*'),
             '@config': path.resolve(__dirname, '/src/config'),
-            '@helper': path.resolve(__dirname, '/src/helper'),
+            '@common': path.resolve(__dirname, '/src/common'),
             '@controller': path.resolve(__dirname, 'src/controller'),
         }
     },

@@ -1,5 +1,5 @@
+import { Logger } from '@common';
 import { globalConfig } from '@config';
-import { Logger } from '@helper';
 import bodyParser from 'body-parser';
 import express, { Application } from 'express';
 import path from 'path';

@@ -1,4 +1,4 @@
-import { Logger } from '@helper';
+import { Logger } from '@common';
 import express, { Application } from 'express';
 import * as startup from './startup';
 
