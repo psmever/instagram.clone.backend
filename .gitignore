@@ -1,0 +1,15 @@
+# Default
+/node_modules
+/build
+/public
+yarn-error.log
+/*.log
+/logs
+
+# environment config file
+.env
+
+# Editor
+.vscode
+.DS_Store
+.idea
