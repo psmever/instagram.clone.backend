@@ -49,6 +49,9 @@ npm run start or yarn start
 
 http://localhost:8080
 
+
+Welcome to 메시지 확인.
+
 ```
 
 > 빌드 테스트
