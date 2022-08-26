@@ -9,4 +9,15 @@ const connectionDB = mysql.createPool({
   password: globalConfig.mysql_password,
 });
 
+connectionDB.on('connection', function (connection) {
+  console.log('Database Connection Success');
+
+  connection.on('error', function (err) {
+    console.error(new Date(), 'Database Connection Success Fail', err);
+  });
+  connection.on('close', function (err) {
+    console.error(new Date(), 'Database Connection Close', err);
+  });
+});
+
 export { connectionDB };

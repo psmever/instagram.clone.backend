@@ -11,7 +11,6 @@ export function baseSuccessResponse<T>(
   payload: T
 ): Response {
   return response.status(200).json({
-    status: true,
     ...payload,
   });
 }

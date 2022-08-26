@@ -1,6 +1,8 @@
-import { index } from '@controller/web/DefaultController';
+import { index } from '@controller/web/defaultController';
 import { Router } from 'express';
 
-export const DefaultRouter = Router();
+const defaultRouter = Router();
 
-DefaultRouter.get('/', index);
+defaultRouter.get('/', index);
+
+export default defaultRouter;

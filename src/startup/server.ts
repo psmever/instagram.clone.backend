@@ -4,9 +4,8 @@ import bodyParser from 'body-parser';
 import express, { Application } from 'express';
 import path from 'path';
 
-import { DefaultRouter } from '@src/routers';
-
 import userRouter from '@src/routers/api/userRouter';
+import webDefaultRouter from '@src/routers/web/defaultRouter';
 
 interface CheckEnvironmentResult {
   state: boolean;
@@ -14,6 +13,7 @@ interface CheckEnvironmentResult {
 }
 
 export const checkEnvironment = (): CheckEnvironmentResult => {
+  // TODO: 서버 시작시 체크해야 할것들 정리.
   return {
     state: true,
     message: `check end `,
@@ -26,15 +26,13 @@ function addRouters(app: Application): void {
   // const baseWebRoute = '/web';
   // const baseRouteVersion = '/v1';
 
-  app.use(`/`, DefaultRouter);
+  app.use(`/`, webDefaultRouter);
 
   app.use(`${baseApiRoute}/user`, userRouter);
 }
 
 // 서버 설정.
 export function initServer(app: Application): void {
-  // app.engine('pug', require('pug').__express);
-
   app.set('views', path.join(__dirname, 'resources/views'));
   app.set('view engine', 'pug');
   app.use(express.static(path.join(__dirname, 'resources')));
