@@ -1,7 +1,9 @@
-// import * as userController from '@controller/api/userController';
+import { allList } from '@controller/api/userController';
 import { Router } from 'express';
 
-export const DefaultRouter = Router();
+const userRouter = Router();
 
 // TODO : 사용자 리스트.
-// DefaultRouter.get('/all-user', userController.allList);
+userRouter.get('/all-user', allList);
+
+export default userRouter;

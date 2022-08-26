@@ -6,6 +6,8 @@ import path from 'path';
 
 import { DefaultRouter } from '@src/routers';
 
+import userRouter from '@src/routers/api/userRouter';
+
 interface CheckEnvironmentResult {
   state: boolean;
   message: string;
@@ -20,11 +22,13 @@ export const checkEnvironment = (): CheckEnvironmentResult => {
 
 // 라우터
 function addRouters(app: Application): void {
-  // const baseApiRoute = '/api';
+  const baseApiRoute = '/api';
   // const baseWebRoute = '/web';
   // const baseRouteVersion = '/v1';
 
   app.use(`/`, DefaultRouter);
+
+  app.use(`${baseApiRoute}/user`, userRouter);
 }
 
 // 서버 설정.
