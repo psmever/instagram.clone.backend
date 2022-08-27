@@ -64,7 +64,7 @@ npm run build:start or yarn build:start
 
 > vscode 에디터 rest client.
 
-[rest-client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) vscode eslint extension 링크 클릭
+[rest-client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) rest-client 링크 클릭
 
 ## Contributing
 
