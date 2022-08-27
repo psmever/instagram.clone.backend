@@ -16,7 +16,8 @@
     "build:clear": "rm -rf public || true",
     "build:src": "webpack --config ./webpack.config.js",
     "build:tsc": "tsc -p .",
-    "server:test": "yarn build:clear && yarn build:src && node public/index.js"
+    "server:test": "yarn build:clear && yarn build:src && node public/index.js",
+    "build:prod": "rm -rf public || true && webpack --config ./webpack.config.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.35.1",
