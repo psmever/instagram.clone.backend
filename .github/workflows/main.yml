@@ -20,4 +20,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /var/www/site/instagram.clone/server
-            sh deploy.sh
+            bash deploy.sh
