@@ -12,6 +12,11 @@ GET http://localhost:8082/api/user/all-user HTTP/1.1
 content-type: application/json
 
 ###
+# 사용자 리스트
+GET http://localhost:8082/api/user/all-user2 HTTP/1.1
+content-type: application/json
+
+###
 # 테스트 리스트
 GET http://localhost:8082/api/user/all-test HTTP/1.1
 content-type: application/json
