@@ -7,3 +7,8 @@ export const allList = async (req: Request, res: Response): Promise<void> => {
     result: await userModel.getAllUser(),
   });
 };
+export const allTest = async (req: Request, res: Response): Promise<void> => {
+  baseSuccessResponse(res, {
+    result: await userModel.getAllUser(),
+  });
+};
