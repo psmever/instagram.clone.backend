@@ -19,5 +19,5 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd git/helper-release/scripts
+            cd /var/www/site/instagram.clone/server
             sh deploy.sh
