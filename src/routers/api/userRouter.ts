@@ -2,6 +2,7 @@ import {
   allList,
   allList2,
   allTest,
+  getUsers,
   userList,
 } from '@controller/api/userController';
 import { Router } from 'express';
@@ -13,5 +14,6 @@ userRouter.get('/all-user', allList);
 userRouter.get('/all-user2', allList2);
 userRouter.get('/all-test', allTest);
 userRouter.get('/user-list', userList);
+userRouter.post('/users', getUsers);
 
 export default userRouter;

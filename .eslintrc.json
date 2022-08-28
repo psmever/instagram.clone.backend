@@ -27,6 +27,12 @@
       {
         "checksVoidReturn": false
       }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
     ]
   },
   "ignorePatterns": ["dist/", "node_modules/"]
