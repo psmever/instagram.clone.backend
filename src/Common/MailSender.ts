@@ -23,9 +23,9 @@ const MailSender = {
 
         // 메일 옵션
         const mailOptions = {
-            from: `"PMK Gram Team" <${Config.GMAIL_USER}>`,
+            from: `"Instagram Clone Team" <${Config.GMAIL_USER}>`,
             to: ToEmail,
-            subject: 'pmkgram 회원 가입 이메일 인증을 완료 해주세요.',
+            subject: 'instagram clone 회원 가입 이메일 인증을 완료 해주세요.',
             text: EmailAuthCode,
             html: `<b>아래 링크를 클릭해서 이메일 인증을 완료해 주세요.</b><br /><br />
             <a href="${serviceLink}">클릭.</a>
