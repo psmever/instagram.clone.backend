@@ -53,15 +53,15 @@ console.debug(`#################################################################
     if(result[0].count === 0) {
 
         console.log(`profile image insert...`)
+        await conn.query(`SET FOREIGN_KEY_CHECKS=0;`)
         await conn.query(
             `insert into media (user_id, type, path, filename, origin_name, size, created_at) 
                 values 
                 ('1', 'image/jpeg', '/upload', 'f530d1c8-7a6f-42a2-8124-cabc954a29e9.jpeg', 'profile.jpeg', 28350, now());
              `,
         )
+        await conn.query(`SET FOREIGN_KEY_CHECKS=1;`)
     }
-
-
     console.debug(`######################################################################`)
     exit()
 })()
