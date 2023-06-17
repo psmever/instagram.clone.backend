@@ -1,4 +1,4 @@
-## pmkgram.backend
+## instagram.clone.backend
 
 ### 초기 설정 참고
 
@@ -84,9 +84,9 @@ production.environment.env
 # yarn deploy:prod
 
 
-➜  pmkgram.backend [ develop * ] yarn deploy:prod
+➜ yarn deploy:prod
 yarn run v1.22.19
-$ ssh sm@psmever.iptime.org -p42022 -t 'bash -ic "bash ~/Workspaces/deploy/pmk-gram/backend-deploy.sh"'
+$ ssh sm@psmever.iptime.org -p42022 -t 'bash -ic "bash ~/Workspaces/deploy/Workspaces/deploy/instagram.clone/backend-deploy.sh"'
 sm@psmever.iptime.org's password: ********** 
 ```
 
